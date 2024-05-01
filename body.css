@@ -1,0 +1,79 @@
+
+  /* Atur tampilan body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('download (11).jpeg');
+    background-attachment: scroll;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Atur tampilan header */
+  header {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  /* Atur tampilan section */
+  
+
+  h2 {
+    color: #ffffff;
+    padding: 0px;
+    text-align: center;
+    text-size-adjust: 0px;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+  .container {
+    margin: 40px auto;
+    width: 400px;
+    text-align: center;
+    padding: 40px;
+    line-height: 45px; 
+    box-shadow: 0 4px 8px 0 rgba(245, 202, 202, 0.2);
+    background-color: rgba(0, 0, 0, 0.8); /* Darker shade for the container for better visibility */
+    border-radius: 60px;
+}
+.result-box {
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(207, 206, 206, 0.2);
+    background-color: #ffffff;
+    border-radius: 100px;}
+   
+    button {
+            padding: 10px 20px;
+            background-color: #052efc;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 100px;
+    }    
+    #footer {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        text-align: center;
+        padding: 0px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    }

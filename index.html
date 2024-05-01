@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Sederhana</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+    <header>
+        <h1>Check Scientific Number</h1>
+    </header>
+    <div class="container">
+        <h2>Enter the number you want to check</h2>
+        <input type="text" id="inputNumber" placeholder="enter a number">
+        <button onclick="cekNotasiIlmiah()">Cek</button>
+    <div id="result" class="result-box">
+        </div></div>
+   
+    <script>
+        function cekNotasiIlmiah() {
+          var input = document.getElementById("inputNumber").value;
+          var number = Number(input);
+    
+          if (isNaN(number)) {
+            document.getElementById("result").innerText = "Not a number!";
+            return;
+          }
+    
+          var scientificNotationRegex = /^-?\d+(?:\.\d+)?(?:e|E)(?:\-|\+)?\d+$/;
+          if (scientificNotationRegex.test(input)) {
+            document.getElementById("result").innerText = "This number is scientific notation";
+          } else {
+            document.getElementById("result").innerText = "This number is not scientific notation";
+          }
+        }
+      </script>
+       <div id="footer">
+        <p>ARI ZAKKAI PANGGULU <br> (221011060031) <br> SISTEM INFORMASI <br> UNIVERSITAS SAM RATULANGI MANADO</p>
+    </div>
+
+</body>
+</html>
